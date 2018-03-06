@@ -1,8 +1,8 @@
-@import 'base';
+@import 'variables';
 
 body {
     background: $color-primario;
 }
 h1 {
-    color: red;
+    color: blue;
 }
