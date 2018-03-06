@@ -1,14 +1,21 @@
-# Start Grunt
+# Plantilla Grunt
+##### compilar Archivos sass y JS
 
-Learn how to get started with Grunt and Sass.
+revisamos que tengamos instalado todo lo necesario:
+-Ruby (para compilar sass, ya que este esta bajo ruby), en la terminal agregamos esta linea para verificar si hay ruby instalado: [ruby -v](https://sass-lang.com/install).
 
+-[NodeJS](http://nodejs.org/es/ "NodeJS").
 
-- Understand enough about Node.js to get Grunt up and running.
-- Create a Sass project.
-- Utilize Grunt to compile multiple Sass files into one CSS file, apply prefixes, and minify.
-- Minify your JavaScript.
-- Run one command that will watch your entire directory for changes.
+-[NPM](http://www.npmjs.com/ "NPM")
+
+y ya solo tenemos que instalar las depedencias de NPM
+- npm install
+
+Para correr proyecto local le damos:
+- grunt
 
 ## License
 
-The code is open source and available under the [MIT License](LICENSE.md).
+The code is open source.
+
+######Bryan Villamil Acevedo
