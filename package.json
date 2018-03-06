@@ -2,6 +2,7 @@
   "name": "plantilla",
   "version": "0.0.1",
   "description": "plantilla de compilacion SASS JS",
+  "autor": "Bryan Villamil",
   "license": "MIT",
   "devDependencies": {
     "grunt": "~0.4.5",
