@@ -1,5 +1,391 @@
-body {
-  background: #f8f8f8; }
+@import url("https://fonts.googleapis.com/css?family=Bitter:400,400i,700");
+@import url("https://fonts.googleapis.com/css?family=Alegreya+Sans:100,300,400,500,700,800,900");
+body, html {
+  height: 100%;
+  margin: 0; }
 
-h1 {
-  color: red; }
+section {
+  height: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #8BD8F0; }
+  section .cont {
+    width: 800px;
+    margin: 0 auto; }
+    section .cont__up {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      background: #1A7391;
+      position: relative;
+      height: 105px;
+      padding: 0 35px;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      border-radius: 7px 7px 0 0px; }
+      section .cont__up-title h1 {
+        color: #fff;
+        margin: 0;
+        font-size: 30px;
+        font-family: "Bitter", serif;
+        font-weight: 100; }
+      section .cont__up-title p {
+        color: #fff;
+        opacity: .8;
+        font-size: 12px;
+        margin: 0;
+        font-family: "Alegreya Sans", sans-serif;
+        font-weight: 200; }
+      section .cont__up-band {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: 3%;
+        height: 125%;
+        width: 110px;
+        background: #90BA42;
+        padding: 0 15px; }
+        section .cont__up-band:after {
+          display: inline-block;
+          content: '';
+          border-left: 71px solid transparent;
+          border-right: 71px solid transparent;
+          border-top: 30px solid #90BA42;
+          position: absolute;
+          bottom: -22%;
+          right: -1px; }
+      section .cont__up .bandera span {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center; }
+      section .cont__up .bandera__num {
+        color: rgba(0, 0, 0, 0.5);
+        font-family: "Alegreya Sans", sans-serif;
+        font-style: italic; }
+        section .cont__up .bandera__num:before {
+          content: '';
+          display: inline-block;
+          margin-right: 8px;
+          height: 1px;
+          width: 18%;
+          background: rgba(255, 255, 255, 0.7); }
+        section .cont__up .bandera__num:after {
+          content: '';
+          display: inline-block;
+          margin-left: 8px;
+          height: 1px;
+          width: 18%;
+          background: rgba(255, 255, 255, 0.7); }
+      section .cont__up .bandera__free {
+        color: #fff;
+        font-size: 38px;
+        padding: 8px 0;
+        font-family: "Bitter", serif;
+        font-weight: 100; }
+      section .cont__up .bandera__real {
+        color: rgba(0, 0, 0, 0.5);
+        font-family: "Alegreya Sans", sans-serif;
+        font-style: italic; }
+        section .cont__up .bandera__real:before {
+          content: '';
+          display: inline-block;
+          margin-right: 8px;
+          height: 1px;
+          width: 18%;
+          background: rgba(255, 255, 255, 0.7); }
+        section .cont__up .bandera__real:after {
+          content: '';
+          display: inline-block;
+          margin-left: 8px;
+          height: 1px;
+          width: 18%;
+          background: rgba(255, 255, 255, 0.7); }
+    section .cont__form {
+      background: #fff;
+      padding: 20px 0;
+      border-radius: 0 0 7px 7px; }
+    section .cont .form__top, section .cont .form__bottom {
+      padding: 0 35px;
+      margin-top: 25px;
+      position: relative; }
+      section .cont .form__top-num, section .cont .form__bottom-num {
+        position: absolute;
+        left: -15px;
+        top: -7px;
+        padding: 9px 5px;
+        background: #fff;
+        border-radius: 50%; }
+        section .cont .form__top-num span, section .cont .form__bottom-num span {
+          color: #fff;
+          background: #62ADDD;
+          padding: 5px 10px;
+          border-radius: 50%;
+          font-family: "Bitter", serif; }
+      section .cont .form__top-title h3, section .cont .form__bottom-title h3 {
+        margin: 0;
+        color: #636F78;
+        font-family: "Bitter", serif;
+        font-weight: 100;
+        font-size: 20px; }
+      section .cont .form__top-content, section .cont .form__bottom-content {
+        background: #F4F6F5;
+        border-radius: 5px;
+        padding: 10px 20px;
+        margin-top: 10px;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+        section .cont .form__top-content .name, section .cont .form__top-content .address, section .cont .form__top-content .email, section .cont .form__top-content .pass, section .cont .form__bottom-content .name, section .cont .form__bottom-content .address, section .cont .form__bottom-content .email, section .cont .form__bottom-content .pass {
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-flex-direction: column;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          margin: 10px 0;
+          position: relative; }
+          section .cont .form__top-content .name label, section .cont .form__top-content .address label, section .cont .form__top-content .email label, section .cont .form__top-content .pass label, section .cont .form__bottom-content .name label, section .cont .form__bottom-content .address label, section .cont .form__bottom-content .email label, section .cont .form__bottom-content .pass label {
+            color: gray;
+            padding-bottom: 8px;
+            font-family: "Alegreya Sans", sans-serif;
+            font-size: 15px; }
+            section .cont .form__top-content .name label.note, section .cont .form__top-content .address label.note, section .cont .form__top-content .email label.note, section .cont .form__top-content .pass label.note, section .cont .form__bottom-content .name label.note, section .cont .form__bottom-content .address label.note, section .cont .form__bottom-content .email label.note, section .cont .form__bottom-content .pass label.note {
+              font-size: 10px;
+              opacity: .8;
+              padding-top: 5px; }
+          section .cont .form__top-content .name input, section .cont .form__top-content .address input, section .cont .form__top-content .email input, section .cont .form__top-content .pass input, section .cont .form__bottom-content .name input, section .cont .form__bottom-content .address input, section .cont .form__bottom-content .email input, section .cont .form__bottom-content .pass input {
+            border: none;
+            border-radius: 8px;
+            height: 30px;
+            box-shadow: 1px -1px 1px #bbb;
+            border: double #ccc; }
+            section .cont .form__top-content .name input:focus, section .cont .form__top-content .name input.open, section .cont .form__top-content .address input:focus, section .cont .form__top-content .address input.open, section .cont .form__top-content .email input:focus, section .cont .form__top-content .email input.open, section .cont .form__top-content .pass input:focus, section .cont .form__top-content .pass input.open, section .cont .form__bottom-content .name input:focus, section .cont .form__bottom-content .name input.open, section .cont .form__bottom-content .address input:focus, section .cont .form__bottom-content .address input.open, section .cont .form__bottom-content .email input:focus, section .cont .form__bottom-content .email input.open, section .cont .form__bottom-content .pass input:focus, section .cont .form__bottom-content .pass input.open {
+              outline: #D72F73 auto 4px; }
+          section .cont .form__top-content .name span.error, section .cont .form__top-content .address span.error, section .cont .form__top-content .email span.error, section .cont .form__top-content .pass span.error, section .cont .form__bottom-content .name span.error, section .cont .form__bottom-content .address span.error, section .cont .form__bottom-content .email span.error, section .cont .form__bottom-content .pass span.error {
+            position: absolute;
+            right: 0;
+            bottom: -35%;
+            font-size: 13px;
+            font-family: "Alegreya Sans", sans-serif;
+            font-weight: 400;
+            color: #D72F73;
+            display: none; }
+            section .cont .form__top-content .name span.error .fa-exclamation, section .cont .form__top-content .address span.error .fa-exclamation, section .cont .form__top-content .email span.error .fa-exclamation, section .cont .form__top-content .pass span.error .fa-exclamation, section .cont .form__bottom-content .name span.error .fa-exclamation, section .cont .form__bottom-content .address span.error .fa-exclamation, section .cont .form__bottom-content .email span.error .fa-exclamation, section .cont .form__bottom-content .pass span.error .fa-exclamation {
+              position: absolute;
+              right: 15%;
+              bottom: 32px;
+              color: #fff;
+              background: #d72f73;
+              border-radius: 50%;
+              padding: 4px 8px;
+              z-index: 3;
+              font-size: 12px; }
+          section .cont .form__top-content .name p.show, section .cont .form__top-content .address p.show, section .cont .form__top-content .email p.show, section .cont .form__top-content .pass p.show, section .cont .form__bottom-content .name p.show, section .cont .form__bottom-content .address p.show, section .cont .form__bottom-content .email p.show, section .cont .form__bottom-content .pass p.show {
+            color: gray;
+            font-size: 11px;
+            font-family: "Alegreya Sans", sans-serif; }
+            section .cont .form__top-content .name p.show input, section .cont .form__top-content .address p.show input, section .cont .form__top-content .email p.show input, section .cont .form__top-content .pass p.show input, section .cont .form__bottom-content .name p.show input, section .cont .form__bottom-content .address p.show input, section .cont .form__bottom-content .email p.show input, section .cont .form__bottom-content .pass p.show input {
+              height: initial; }
+        section .cont .form__top-content .email span.error, section .cont .form__bottom-content .email span.error {
+          bottom: 5px; }
+          section .cont .form__top-content .email span.error .fa-exclamation, section .cont .form__bottom-content .email span.error .fa-exclamation {
+            bottom: 30px; }
+        section .cont .form__top-content .address, section .cont .form__bottom-content .address {
+          position: relative; }
+          section .cont .form__top-content .address span.correo, section .cont .form__bottom-content .address span.correo {
+            position: absolute;
+            bottom: 4px;
+            right: 0;
+            width: 25%;
+            height: 30px;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-align-items: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            background: #f2f2f2;
+            opacity: .8;
+            color: gray;
+            padding-left: 10px;
+            border-left: 1px solid #ddd; }
+      section .cont .form__top-send, section .cont .form__bottom-send {
+        padding: 8px 0 10px; }
+        section .cont .form__top-send p, section .cont .form__bottom-send p {
+          font-size: 12px;
+          font-family: "Alegreya Sans", sans-serif;
+          color: #555; }
+          section .cont .form__top-send p a, section .cont .form__bottom-send p a {
+            color: #7FCCE5;
+            text-decoration: none;
+            transition: all .5s; }
+            section .cont .form__top-send p a:hover, section .cont .form__bottom-send p a:hover {
+              color: #55bbdc; }
+        section .cont .form__top-send-link, section .cont .form__bottom-send-link {
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-justify-content: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          padding-top: 15px; }
+          section .cont .form__top-send-link .enviar, section .cont .form__bottom-send-link .enviar {
+            padding: 12px 18px;
+            color: #fff;
+            background: #90BA42;
+            font-family: "Bitter", serif;
+            text-decoration: none;
+            border-radius: 7px;
+            position: relative;
+            transition: all .5s;
+            overflow: hidden;
+            z-index: 1;
+            font-size: 18px;
+            letter-spacing: .3px;
+            display: inline-block;
+            transition: all .5s; }
+            section .cont .form__top-send-link .enviar:hover, section .cont .form__bottom-send-link .enviar:hover {
+              background: #81a73b;
+              -webkit-transform: scale(1.1);
+                      transform: scale(1.1); }
+    section .cont .form__bottom {
+      margin-top: 40px; }
+    @media (max-width: 880px) {
+      section .cont {
+        width: 90%; } }
+    @media (max-width: 768px) {
+      section .cont__up {
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between; }
+        section .cont__up-band {
+          position: relative; }
+      section .cont .form__top-content .address span.correo {
+        width: 30%; } }
+    @media (max-width: 568px) {
+      section .cont__up {
+        padding: 0 25px; }
+        section .cont__up-band {
+          width: 80px;
+          height: 94%;
+          right: 0; }
+          section .cont__up-band:after {
+            right: 0;
+            bottom: -25%;
+            border-left: 54px solid transparent;
+            border-right: 56px solid transparent;
+            border-top: 25px solid #90BA42; }
+        section .cont__up .bandera__num {
+          font-size: 14px; }
+          section .cont__up .bandera__num:before {
+            width: 16%;
+            margin-right: 5px; }
+          section .cont__up .bandera__num:after {
+            width: 16%;
+            margin-left: 5px; }
+        section .cont__up .bandera__free {
+          font-size: 20px;
+          letter-spacing: 1px; }
+        section .cont__up .bandera__real {
+          font-size: 12px; }
+          section .cont__up .bandera__real:before {
+            width: 16%;
+            margin-right: 5px; }
+          section .cont__up .bandera__real:after {
+            width: 16%;
+            margin-left: 5px; }
+      section .cont .form__top, section .cont .form__bottom {
+        padding: 0 25px;
+        margin-top: 15px; }
+        section .cont .form__top-num, section .cont .form__bottom-num {
+          display: none; }
+        section .cont .form__top-title, section .cont .form__bottom-title {
+          text-align: center; }
+        section .cont .form__top-content .campo label, section .cont .form__bottom-content .campo label {
+          font-size: 14px; }
+        section .cont .form__top-content .address span.correo, section .cont .form__bottom-content .address span.correo {
+          width: 48%;
+          font-size: 13px;
+          padding-left: 4px; }
+      section .cont .form__bottom {
+        margin-top: 25px; } }
+    @media (max-width: 480px) {
+      section .cont__up-title h1 {
+        font-size: 22px; }
+      section .cont__up-title p {
+        font-size: 11px; } }
+    @media (max-width: 450px) {
+      section .cont__up {
+        padding: 0;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        height: 100%;
+        padding-bottom: 10px; }
+        section .cont__up-title {
+          width: 100%;
+          padding: 12px 0;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-justify-content: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          -webkit-align-items: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          -webkit-flex-direction: column;
+              -ms-flex-direction: column;
+                  flex-direction: column; }
+        section .cont__up-band {
+          width: 92%;
+          height: auto;
+          padding: 5px 0;
+          border-radius: 4px; }
+          section .cont__up-band:after {
+            content: none; }
+        section .cont__up .bandera__num {
+          font-size: 14px; }
+          section .cont__up .bandera__num:before {
+            width: 12%; }
+          section .cont__up .bandera__num:after {
+            width: 12%; }
+        section .cont__up .bandera__free {
+          font-size: 20px;
+          padding: 2px 0; }
+        section .cont__up .bandera__real {
+          font-size: 14px; }
+          section .cont__up .bandera__real:before {
+            width: 12%; }
+          section .cont__up .bandera__real:after {
+            width: 12%; }
+      section .cont .form__top, section .cont .form__bottom {
+        padding: 0 15px; }
+        section .cont .form__top-title h3, section .cont .form__bottom-title h3 {
+          padding: 0 10px;
+          font-size: 18px; } }

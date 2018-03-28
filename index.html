@@ -3,17 +3,116 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Start Grunt</title>
+	<title>Formulario</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<link href="css/style.min.css" rel="stylesheet">
+
 </head>
 
 <body>
-	<div class="contenedor">
-		<h1>prueba</h1>
-	</div>
+	<section>
+		<div class="cont">
+			<div class="cont__up">
+				<div class="cont__up-title">
+					<h1>Sign up for meh.</h1>
+					<p>Everything you need to build a pretty online portafolio.</p>
+				</div>
+				<div class="cont__up-band bandera">
+					<span class="bandera__num">100%</span>
+					<span class="bandera__free">FREE</span>
+					<span class="bandera__real">for real</span>
+				</div>
+			</div>
+			<form id="myform2" action="" class="cont__form form">
+				<div class="form__top">
+					<div class="form__top-num">
+						<span>1</span>
+					</div>
+					<div class="form__top-title">
+						<h3>First, name your portfolio</h3>
+					</div>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+					<div class="form__top-content">
+						<div class="name campo">
+							<label for="field">Portafolio title</label>
+							<input type="text" class="left" id="name" name="name">
+							<span class="error">
+								<i class='fa fa-exclamation' aria-hidden='true'></i>
+								required
+							</span>
+							
+						</div>
+						<div class="address campo">	
+							<label for="">Portafolio address</label>
+							<input type="text" name="address">
+							<span class="error">
+								<i class='fa fa-exclamation' aria-hidden='true'></i>
+								required
+							</span>
+							<span class="correo">sancrisoft.com</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="form__bottom">
+					<div class="form__bottom-num">
+						<span>2</span>
+					</div>
+					<div class="form__bottom-title">
+						<h3>Now, enter your account details</h3>
+					</div>
+
+					<div class="form__bottom-content">
+						<div class="name campo">
+							<label for="">Name</label>
+							<input type="text" name="name">
+							<span class="error">
+								<i class='fa fa-exclamation' aria-hidden='true'></i>
+								required
+							</span>
+						</div>
+						<div class="email campo">	
+							<label for="">Email</label>
+							<input type="text" name="email">
+							<span class="error">
+								<i class='fa fa-exclamation' aria-hidden='true'></i>
+								required
+							</span>
+							<label class="note" for="">NOTE: Well never share your email promise</label>
+						</div>
+						<div class="pass campo">
+							<label for="">Password</label>
+							<input type="password" name="pass">
+							<span class="error">
+								<i class='fa fa-exclamation' aria-hidden='true'></i>
+								required
+							</span>
+							<p class="show"><input type="checkbox" name="show" value="pass"> Show Password</p>
+						</div>
+					</div>
+
+					<div class="form__bottom-send">
+						<p class="acept">
+							<input type="checkbox" name="show" value="acep">
+							i agree to the <a href="#">Term of USE, Privacy policy</a> and 
+							<a href="#">Return policy</a>
+						</p>
+						<div class="form__bottom-send-link">
+							<input type="submit" value="Create your portafolio" class="enviar">
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+
+
+		<!-- <i class="fa fa-exclamation" aria-hidden="true"></i> -->
+
+
+	</section>
+
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 	<script src="js/script.min.js"></script>
 </body>
 
